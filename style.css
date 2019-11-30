@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page1,
+.page2 {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    color: #eeeeff;
+    text-decoration: none;
+    width: 100%;
+    font-family: Montserrat;
+}
+
+.page1 {
+    background: #d40732;
+}
+
+.page2 {
+    background: #333;
+}
+
+.page1>a {
+    text-decoration: none;
+    margin-top: 50px;
+    padding: 30px;
+    border: 1px solid white;
+    color: #ffff;
+    align-self: center;
+    /* background: darkgrey; */
+}
+
+.page2>a {
+    text-decoration: none;
+    margin-top: 50px;
+    padding: 30px;
+    border: 1px solid white;
+    color: #ffff;
+    align-self: center;
+    /* background: darkgrey; */
+}
+
+
+.slide-in{
+    animation: slide-in 1.5s ease forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+        visibility: visible;
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
